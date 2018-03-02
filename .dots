@@ -32,21 +32,15 @@ function runDots() {
             echo ""
             ./brew.sh
         fi
-        # if [ $ARG == "osx" ] || [ $ARG == "all" ]; then
-        #     # Run the osx.sh Script
-        #     # I strongly suggest you read through the commented osx.sh
-        #     # source file and tweak any settings based on your personal
-        #     # preferences. The script defaults are intended for you to
-        #     # customize. For example, if you are not running an SSD you
-        #     # might want to change some of the settings listed in the
-        #     # SSD section.
-        #     echo ""
-        #     echo "------------------------------"
-        #     echo "Setting sensible OSX defaults."
-        #     echo "------------------------------"
-        #     echo ""
-        #     ./osx.sh
-        # fi
+        if [ $ARG == "zsh" ] || [ $ARG == "all" ]; then
+            # Run the zsh.sh Script
+            echo ""
+            echo "------------------------------"
+            echo "Setting up zsh."
+            echo "------------------------------"
+            echo ""
+            ./zsh.sh
+        fi
     done
 
     echo "------------------------------"
@@ -54,10 +48,6 @@ function runDots() {
     echo "------------------------------"
 }
 
-read -p "This script may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1;
-echo "";
-if [[ $REPLY =~ ^[Yy]$ ]]; then
-    runDots $@
-fi;
+runDots $@
 
 unset runDots;
