@@ -72,6 +72,7 @@ brew install unixodbc
 brew install node
 brew install watchman
 brew install yarn
+brew install less
 
 # Install Cask
 brew install caskroom/cask/brew-cask
@@ -100,7 +101,7 @@ brew cask install --appdir="/Applications" react-native-debugger
 brew cask install --appdir="/Applications" rowanj-gitx
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package
 
 # Remove outdated versions from the cellar.
 brew cleanup
