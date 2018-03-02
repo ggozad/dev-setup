@@ -82,7 +82,7 @@ brew tap caskroom/versions
 brew cask install --appdir="~/Applications" iterm2
 brew cask install --appdir="~/Applications" java
 brew cask install --appdir="~/Applications" xquartz
-
+brew cask install caskroom/versions/java8
 # Development tool casks
 brew cask install --appdir="/Applications" sublime-text
 brew cask install --appdir="/Applications" atom
@@ -94,7 +94,7 @@ brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" 1password
-brew cask install --appdir="/Applications" android-ndk
+brew cask install --appdir="/Applications" android-sdk
 brew cask install --appdir="/Applications" android-platform-Tools
 brew cask install --appdir="/Applications" android-studio
 brew cask install --appdir="/Applications" react-native-debugger
