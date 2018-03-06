@@ -14,6 +14,6 @@ cp ./dotfiles/.gitconfig ~
 apm install linter linter-ui-default
 apm install linter-eslint
 apm install prettier-atom
-apm install linter-pylint
-pip install pylint
+apm install linter-pycodestyle
+pip install pycodestyle
 yarn global add prettier
