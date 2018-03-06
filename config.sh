@@ -9,3 +9,11 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 cp ./dotfiles/.zshrc ~
 cp ./dotfiles/.aliases ~
 cp ./dotfiles/.gitconfig ~
+
+# Atom
+apm install linter linter-ui-default
+apm install linter-eslint
+apm install prettier-atom
+apm install linter-pylint
+pip install pylint
+yarn global add prettier
