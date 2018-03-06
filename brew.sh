@@ -46,6 +46,7 @@ brew install dark-mode
 brew install git
 brew install git-flow
 brew install git-extras
+brew install diff-so-fancy
 brew install hub
 brew install pkg-config libffi
 brew install htop
