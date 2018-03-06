@@ -68,7 +68,7 @@ brew install openssl
 brew install pcre
 brew install readline
 brew install unixodbc
-
+brew install postgresql@9.5
 # js
 brew install node
 brew install watchman
@@ -102,6 +102,7 @@ brew cask install --appdir="/Applications" react-native-debugger
 brew cask install --appdir="/Applications" rowanj-gitx
 brew cask install --appdir="/Applications" steam
 brew cask install --appdir="/Applications" quicksilver
+brew cask install --appdir="/Applications" crypho
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package
 
