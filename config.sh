@@ -17,3 +17,4 @@ apm install prettier-atom
 apm install linter-pycodestyle
 pip install pycodestyle
 yarn global add prettier
+cp ./dotfiles/config.cson ~/.atom/
