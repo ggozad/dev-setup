@@ -18,3 +18,6 @@ apm install linter-pycodestyle
 pip install pycodestyle
 yarn global add prettier
 cp ./dotfiles/config.cson ~/.atom/
+
+# ssh
+cp ./dotfiles/sshconfig ~/.ssh/config

@@ -1,0 +1,9 @@
+Host crypho
+  ForwardAgent yes
+  HostName crypho.com
+
+Host staging
+  ProxyCommand ssh -q crypho nc -q0 prod01 22
+
+Host production
+  ProxyCommand ssh -q crypho nc -q0 prod02 22
