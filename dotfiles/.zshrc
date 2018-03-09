@@ -51,3 +51,4 @@ function sima() {
     cd $ANDROID_HOME/emulator
     ./emulator @"$1" -writable-system
 }
+source $HOME/.zshrc.local
