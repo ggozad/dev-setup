@@ -15,6 +15,7 @@ apm install linter linter-ui-default
 apm install linter-eslint
 apm install prettier-atom
 apm install linter-pycodestyle
+apm install language-gherkin
 pip install pycodestyle
 yarn global add prettier
 cp ./dotfiles/config.cson ~/.atom/
