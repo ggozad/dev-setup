@@ -41,6 +41,16 @@ function runDots() {
             echo ""
             ./zsh.sh
         fi
+        if [ $ARG == "config" ] || [ $ARG == "all" ]; then
+            # Run the zsh.sh Script
+            echo ""
+            echo "------------------------------"
+            echo "Setting up config."
+            echo "------------------------------"
+            echo ""
+            ./config.sh
+        fi
+
     done
 
     echo "------------------------------"
