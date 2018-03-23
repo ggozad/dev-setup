@@ -52,3 +52,4 @@ function sima() {
     ./emulator @"$1" -writable-system
 }
 source $HOME/.zshrc.local
+source $HOME/.aliases
