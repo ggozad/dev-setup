@@ -104,7 +104,7 @@ brew cask install --appdir="/Applications" steam
 brew cask install --appdir="/Applications" vlc
 brew cask install --appdir="/Applications" yujitach-menumeters
 brew cask install --appdir="/Applications" crypho
-
+brew cask install --appdir="/Applications" docker
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package
 
