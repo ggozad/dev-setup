@@ -79,6 +79,9 @@ brew install less
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
+# Install hugo
+brew install hugo
+
 # Core casks
 brew cask install --appdir="~/Applications" iterm2
 brew cask install --appdir="~/Applications" java
