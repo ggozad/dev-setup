@@ -13,11 +13,11 @@ export LANG=en_US.UTF-8
 alias n='PATH=$(npm bin):$PATH'
 export STUDIO_JDK=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk
 
-
-export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
-export ANDROID_HOME="/usr/local/share/android-sdk"
+export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
+export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$ANDROID_HOME/tools:$PATH
 export PATH=$ANDROID_HOME/platform-tools:$PATH
+export PATH=$ANDROID_HOME/emulator:$PATH
 export PATH="$PATH:$HOME/.yarn/bin"
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export PATH="/usr/local/opt/erlang@17/bin:$PATH"
