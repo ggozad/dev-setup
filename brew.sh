@@ -60,7 +60,7 @@ brew link libxslt --force
 brew install libyaml
 
 # Web stuff
-brew install chromedriver
+brew cask install chromedriver
 brew install erlang@17
 brew install fontconfig freetype
 brew install nginx
@@ -74,7 +74,10 @@ brew install node
 brew install watchman
 brew install yarn
 brew install less
-
+# appium
+brew install carthage
+brew install libimobiledevice
+brew install ios-deploy
 # Install Cask
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
