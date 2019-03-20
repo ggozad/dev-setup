@@ -69,6 +69,7 @@ brew install pcre
 brew install readline
 brew install unixodbc
 brew install postgresql@9.5
+brew install imagemagick
 # js
 brew install node
 brew install watchman
@@ -91,26 +92,17 @@ brew cask install --appdir="~/Applications" java
 brew cask install --appdir="~/Applications" xquartz
 brew cask install caskroom/versions/java8
 # Development tool casks
-brew cask install --appdir="/Applications" sublime-text
-brew cask install --appdir="/Applications" atom
+brew cask install --appdir="/Applications" visual-studio-code
 
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" firefox
-brew cask install --appdir="/Applications" skype
-brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" dropbox
-brew cask install --appdir="/Applications" 1password
-brew cask install --appdir="/Applications" android-studio
 brew cask install --appdir="/Applications" react-native-debugger
 brew cask install --appdir="/Applications" rowanj-gitx
 brew cask install --appdir="/Applications" steam
-brew cask install --appdir="/Applications" vlc
 brew cask install --appdir="/Applications" yujitach-menumeters
-brew cask install --appdir="/Applications" crypho
 brew cask install --appdir="/Applications" docker
-# Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package
 
 # Remove outdated versions from the cellar.
 brew cleanup
