@@ -242,6 +242,7 @@
         # annotated tags when pushing branches out
         followTags = true
         default = current
+        set-upstream = true
 
 # Use separate file for username / github token / etc
 [include]
@@ -254,3 +255,6 @@
 
 [fetch]
         prune = true
+
+[pull]
+        ff = only
