@@ -61,6 +61,7 @@ brew install libyaml
 
 # Web stuff
 brew cask install chromedriver
+brew install geckodriver
 brew install erlang@17
 brew install fontconfig freetype
 brew install nginx
