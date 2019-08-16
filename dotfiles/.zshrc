@@ -53,3 +53,7 @@ function sima() {
 }
 source $HOME/.zshrc.local
 source $HOME/.aliases
+
+if [ $commands[minikube] ]; then
+  source <(minikube completion zsh)
+fi
