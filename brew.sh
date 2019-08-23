@@ -88,6 +88,7 @@ brew tap caskroom/versions
 brew install hugo
 
 # Core casks
+brew cask install fastlane
 brew cask install --appdir="~/Applications" iterm2
 brew cask install --appdir="~/Applications" java
 brew cask install --appdir="~/Applications" xquartz

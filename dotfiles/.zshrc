@@ -23,6 +23,7 @@ export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export PATH="/usr/local/opt/erlang@17/bin:$PATH"
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export PATH="/usr/local/opt/python@2/bin:$PATH"
+export PATH="$HOME/.fastlane/bin:$PATH"
 
 # Ejabberd compilation flags
 export CFLAGS="-I/usr/local/opt/openssl/include -I/usr/local/opt/zlib/include"
