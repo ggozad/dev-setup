@@ -19,7 +19,7 @@ fi
 brew update
 
 # Upgrade any already-installed formulae.
-brew upgrade --all
+brew upgrade
 
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -31,7 +31,7 @@ brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+brew install gnu-sed
 
 # Install `wget` with IRI support.
 brew install wget --with-iri
@@ -59,10 +59,14 @@ brew link libxml2 --force
 brew link libxslt --force
 brew install libyaml
 
+# Openssl/erlang hack to get erlang@17 working
+brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/8b9d6d688f483a0f33fcfc93d433de501b9c3513/Formula/openssl.rb
+brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/8e8cdfb6eef17ce97bbfb4bc3936f9e1b26649d5/Formula/erlang@17.rb
+
 # Web stuff
 brew cask install chromedriver
 brew install geckodriver
-brew install erlang@17
+#brew install erlang
 brew install fontconfig freetype
 brew install nginx
 brew install openssl
@@ -80,13 +84,11 @@ brew install less
 brew install carthage
 brew install libimobiledevice
 brew install ios-deploy
-# Install Cask
-brew install caskroom/cask/brew-cask
-brew tap caskroom/versions
 
 # Install hugo
 brew install hugo
 
+brew tap homebrew/cask-versions
 # Core casks
 brew cask install fastlane
 brew cask install --appdir="~/Applications" iterm2
