@@ -80,7 +80,8 @@ brew install node
 brew install watchman
 brew install yarn
 brew install less
-# appium
+# ios
+brew install cocoapods
 brew install carthage
 brew install libimobiledevice
 brew install ios-deploy
