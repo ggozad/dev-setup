@@ -86,6 +86,9 @@ brew install carthage
 brew install libimobiledevice
 brew install ios-deploy
 
+# android
+brew cask install android-studio
+
 # Install hugo
 brew install hugo
 
@@ -105,8 +108,7 @@ brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" react-native-debugger
 brew cask install --appdir="/Applications" rowanj-gitx
-brew cask install --appdir="/Applications" steam
-brew cask install --appdir="/Applications" yujitach-menumeters
+brew cask install --appdir="/Applications" menumeters
 brew cask install --appdir="/Applications" docker
 
 # Remove outdated versions from the cellar.
