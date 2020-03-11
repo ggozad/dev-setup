@@ -10,7 +10,7 @@ echo 'export NODE_EXTRA_CA_CERTS="$(mkcert -CAROOT)/rootCA.pem"' >> ~/.zshrc.loc
 
 # Minikube
 brew install kubectl kustomize hyperkit docker-machine-driver-hyperkit
-brew cask install minikube
+brew install minikube
 sudo chown root:wheel /usr/local/opt/docker-machine-driver-hyperkit/bin/docker-machine-driver-hyperkit
 sudo chmod u+s /usr/local/opt/docker-machine-driver-hyperkit/bin/docker-machine-driver-hyperkit
 minikube config set vm-driver hyperkit

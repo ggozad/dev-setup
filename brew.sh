@@ -73,7 +73,7 @@ brew install openssl
 brew install pcre
 brew install readline
 brew install unixodbc
-brew install postgresql@9.5
+brew install postgresql
 brew install imagemagick
 # js
 brew install node
@@ -94,6 +94,7 @@ brew install hugo
 
 brew tap homebrew/cask-versions
 # Core casks
+brew install ruby
 brew cask install fastlane
 brew cask install --appdir="~/Applications" iterm2
 brew cask install --appdir="~/Applications" java
