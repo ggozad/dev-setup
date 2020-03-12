@@ -95,7 +95,6 @@ brew install hugo
 brew tap homebrew/cask-versions
 # Core casks
 brew install ruby
-brew cask install fastlane
 brew cask install --appdir="~/Applications" iterm2
 brew cask install --appdir="~/Applications" java
 brew cask install --appdir="~/Applications" xquartz
@@ -108,9 +107,6 @@ brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" react-native-debugger
-brew cask install --appdir="/Applications" rowanj-gitx
-brew cask install --appdir="/Applications" menumeters
-brew cask install --appdir="/Applications" docker
 
 # Remove outdated versions from the cellar.
 brew cleanup
