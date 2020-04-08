@@ -25,12 +25,6 @@ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export PATH="/usr/local/opt/python@2/bin:$PATH"
 export PATH="$HOME/.fastlane/bin:$PATH"
 
-# Ejabberd compilation flags
-export CFLAGS="-I/usr/local/opt/openssl/include -I/usr/local/opt/zlib/include"
-export LDFLAGS="-L/usr/local/opt/openssl/lib  -L/usr/local/opt/erlang@17/lib -L/usr/local/opt/zlib/lib"
-export CPPFLAGS="-I/usr/local/include -I/usr/local/opt/openssl/include"
-export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/opt/X11/lib/pkgconfig
-
 # Java
 export JAVA_HOME=/Library/Java/Home
 

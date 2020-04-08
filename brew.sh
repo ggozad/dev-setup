@@ -60,8 +60,8 @@ brew link libxslt --force
 brew install libyaml
 
 # Openssl/erlang hack to get erlang@17 working
-brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/8b9d6d688f483a0f33fcfc93d433de501b9c3513/Formula/openssl.rb
-brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/8e8cdfb6eef17ce97bbfb4bc3936f9e1b26649d5/Formula/erlang@17.rb
+brew tap crypho/repo
+brew install Crypho/homebrew-repo/erlang@17
 
 # Web stuff
 brew cask install chromedriver
