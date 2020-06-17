@@ -37,7 +37,6 @@ brew install gnu-sed
 brew install wget --with-iri
 
 # Install Python
-brew install python2
 brew install python3
 
 # Install other useful binaries.
