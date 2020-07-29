@@ -26,7 +26,7 @@ export PATH="/usr/local/opt/python@2/bin:$PATH"
 export PATH="$HOME/.fastlane/bin:$PATH"
 
 # Java
-export JAVA_HOME=/Library/Java/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
 
 export CSC_NAME="Crypho AS (GL4J7SY7W5)"
 

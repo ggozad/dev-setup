@@ -87,7 +87,7 @@ brew install ios-deploy
 
 # android
 brew cask install android-studio
-
+brew cask install adoptopenjdk8
 # Install hugo
 brew install hugo
 
@@ -97,7 +97,6 @@ brew install ruby
 brew cask install --appdir="~/Applications" iterm2
 brew cask install --appdir="~/Applications" java
 brew cask install --appdir="~/Applications" xquartz
-brew cask install caskroom/versions/java8
 # Development tool casks
 brew cask install --appdir="/Applications" visual-studio-code
 
