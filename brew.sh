@@ -105,6 +105,7 @@ brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" react-native-debugger
+brew cask install --appdir="/Applications" rectangle
 
 # Remove outdated versions from the cellar.
 brew cleanup
