@@ -182,7 +182,7 @@
         tool = opendiff
 
 [core]
-        editor = nano
+        editor = code --wait
         abbrev = 12
         attributesfile = ~/.gitattributes
         excludesfile = ~/.gitignore
@@ -258,3 +258,5 @@
 
 [pull]
         ff = only
+[init]
+	defaultBranch = main

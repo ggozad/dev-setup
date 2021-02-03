@@ -10,10 +10,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Check for Homebrew,
 # Install if we don't have it
-if test ! $(which brew); then
-  echo "Installing homebrew..."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-fi
+# if test ! $(which brew); then
+#   echo "Installing homebrew..."
+#   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# fi
 
 # Make sure we’re using the latest Homebrew.
 brew update
@@ -22,9 +22,7 @@ brew update
 brew upgrade
 
 # Install GNU core utilities (those that come with OS X are outdated).
-# Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
-sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 
 # Install some other useful utilities like `sponge`.
 brew install moreutils
@@ -33,8 +31,8 @@ brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
 brew install gnu-sed
 
-# Install `wget` with IRI support.
-brew install wget --with-iri
+# Install `wget`
+brew install wget
 
 # Install Python
 brew install python3
@@ -54,18 +52,11 @@ brew install thefuck
 # Lxml and Libxslt
 brew install libxml2
 brew install libxslt
-brew link libxml2 --force
-brew link libxslt --force
 brew install libyaml
 
-# Openssl/erlang hack to get erlang@17 working
-brew tap crypho/repo
-brew install Crypho/homebrew-repo/erlang@17
-
 # Web stuff
-brew cask install chromedriver
+brew install chromedriver
 brew install geckodriver
-#brew install erlang
 brew install fontconfig freetype
 brew install nginx
 brew install openssl
@@ -86,26 +77,25 @@ brew install libimobiledevice
 brew install ios-deploy
 
 # android
-brew cask install android-studio
-brew cask install adoptopenjdk8
+brew install android-studio
 # Install hugo
 brew install hugo
 
-brew tap homebrew/cask-versions
 # Core casks
 brew install ruby
-brew cask install --appdir="~/Applications" iterm2
-brew cask install --appdir="~/Applications" java
-brew cask install --appdir="~/Applications" xquartz
+brew install --appdir="~/Applications" iterm2
+brew install --appdir="~/Applications" java
+brew install --appdir="~/Applications" xquartz
 # Development tool casks
-brew cask install --appdir="/Applications" visual-studio-code
+brew install --cask adoptopenjdk/openjdk/adoptopenjdk8
+brew install --appdir="/Applications" visual-studio-code
 
 # Misc casks
-brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" firefox
-brew cask install --appdir="/Applications" dropbox
-brew cask install --appdir="/Applications" react-native-debugger
-brew cask install --appdir="/Applications" rectangle
+brew install --appdir="/Applications" google-chrome
+brew install --appdir="/Applications" firefox
+brew install --appdir="/Applications" dropbox
+brew install --appdir="/Applications" react-native-debugger
+brew install --appdir="/Applications" rectangle
 
 # Remove outdated versions from the cellar.
 brew cleanup

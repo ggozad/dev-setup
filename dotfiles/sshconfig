@@ -2,8 +2,9 @@ Host crypho
   ForwardAgent yes
   HostName crypho.com
 
-Host staging
-  ProxyCommand ssh -q crypho nc -q0 prod01 22
+Host prod04
+  ProxyCommand ssh -q crypho nc -q0 prod04 22
 
-Host production
-  ProxyCommand ssh -q crypho nc -q0 prod02 22
+Host hetnzer1
+  ForwardAgent yes
+  HostName 78.46.232.67
