@@ -37,6 +37,9 @@ brew install wget
 # Install Python
 brew install python3
 
+# Rust
+brew install rust
+
 # Install other useful binaries.
 brew install ack
 brew install dark-mode
@@ -48,6 +51,7 @@ brew install hub
 brew install pkg-config libffi
 brew install htop
 brew install thefuck
+brew install mkcert
 
 # Lxml and Libxslt
 brew install libxml2
