@@ -70,7 +70,7 @@ brew install unixodbc
 brew install postgresql
 brew install imagemagick
 # js
-brew install node
+brew install node@12
 brew install watchman
 brew install yarn
 brew install less
