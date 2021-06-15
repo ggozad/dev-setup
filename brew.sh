@@ -36,7 +36,7 @@ brew install wget
 
 # Install Python
 brew install python3
-
+brew install miniconda
 # Rust
 brew install rust
 
