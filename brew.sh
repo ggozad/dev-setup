@@ -40,6 +40,10 @@ brew install miniconda
 # Rust
 brew install rust
 
+# Install cli utils
+brew install fzf
+brew install broot
+
 # Install other useful binaries.
 brew install ack
 brew install dark-mode
@@ -52,7 +56,8 @@ brew install pkg-config libffi
 brew install htop
 brew install thefuck
 brew install mkcert
-
+brew install nss
+mkcert -install
 # Lxml and Libxslt
 brew install libxml2
 brew install libxslt
