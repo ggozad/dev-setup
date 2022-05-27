@@ -10,13 +10,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Check for Homebrew,
 # Install if we don't have it
-# if test ! $(which brew); then
-#   echo "Installing homebrew..."
-#   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-# fi
-
-# Make sure we’re using the latest Homebrew.
-brew update
+if test ! $(which brew); then
+  echo "Installing homebrew..."
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
 
 # Upgrade any already-installed formulae.
 brew upgrade
@@ -36,12 +33,12 @@ brew install wget
 
 # Install Python
 brew install python3
-brew install miniconda
+
 # Rust
 brew install rust
 
 # Install cli utils
-brew install fzf
+brew install fzf && /usr/local/opt/fzf/install
 brew install broot
 
 # Install other useful binaries.
@@ -54,10 +51,10 @@ brew install diff-so-fancy
 brew install hub
 brew install pkg-config libffi
 brew install htop
-brew install thefuck
-brew install mkcert
+brew install mkcert && mkcert -install
 brew install nss
-mkcert -install
+brew install less
+
 # Lxml and Libxslt
 brew install libxml2
 brew install libxslt
@@ -67,44 +64,24 @@ brew install libyaml
 brew install chromedriver
 brew install geckodriver
 brew install fontconfig freetype
-brew install nginx
 brew install openssl
 brew install pcre
 brew install readline
-brew install unixodbc
-brew install postgresql
 brew install imagemagick
+
 # js
-brew install node@12
+brew install node
 brew install watchman
 brew install yarn
-brew install less
-# ios
-brew install cocoapods
-brew install carthage
-brew install libimobiledevice
-brew install ios-deploy
-
-# android
-brew install android-studio
-# Install hugo
-brew install hugo
-
-# Core casks
-brew install ruby
-brew install --appdir="~/Applications" iterm2
-brew install --appdir="~/Applications" java
-brew install --appdir="~/Applications" xquartz
-# Development tool casks
-brew install --cask adoptopenjdk/openjdk/adoptopenjdk8
-brew install --appdir="/Applications" visual-studio-code
 
 # Misc casks
-brew install --appdir="/Applications" google-chrome
-brew install --appdir="/Applications" firefox
-brew install --appdir="/Applications" dropbox
-brew install --appdir="/Applications" react-native-debugger
-brew install --appdir="/Applications" rectangle
+brew install visual-studio-code
+brew install iterm2
+brew install google-chrome
+brew install firefox
+brew install dropbox
+brew install rectangle
+brew install stats
 
 # Remove outdated versions from the cellar.
 brew cleanup

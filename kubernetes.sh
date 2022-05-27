@@ -9,7 +9,7 @@ mkcert -install
 echo 'export NODE_EXTRA_CA_CERTS="$(mkcert -CAROOT)/rootCA.pem"' >> ~/.zshrc.local
 
 # docker
-brew install  homebrew/cask/docker docker-completion docker-compose-completion
+brew install docker-completion docker-compose-completion
 
 # Minikube
 brew install kubectl kustomize hyperkit docker-machine-driver-hyperkit
