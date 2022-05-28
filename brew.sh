@@ -74,6 +74,10 @@ brew install node
 brew install watchman
 brew install yarn
 
+# docker
+# Install docker from installer
+brew install docker-completion docker-compose-completion
+
 # Misc casks
 brew install visual-studio-code
 brew install iterm2
@@ -82,6 +86,7 @@ brew install firefox
 brew install dropbox
 brew install rectangle
 brew install stats
+brew install tailscale 
 
 # Remove outdated versions from the cellar.
 brew cleanup
