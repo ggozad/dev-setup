@@ -16,9 +16,10 @@ export LANG=en_US.UTF-8
 
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
-source $HOME/.zshrc.local
-source $HOME/.aliases
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-source /Users/ggozad/.config/broot/launcher/bash/br
+source ~/.config/broot/launcher/bash/br
+. /usr/local/etc/profile.d/z.sh
+
+source $HOME/.zshrc.local
+source $HOME/.aliases
