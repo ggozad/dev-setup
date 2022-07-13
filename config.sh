@@ -12,3 +12,5 @@ cp ./dotfiles/.gitconfig ~
 
 # ssh
 cp ./dotfiles/sshconfig ~/.ssh/config
+
+cp -R ./dotfiles/.iterm ~
