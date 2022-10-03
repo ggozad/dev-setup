@@ -1,11 +1,3 @@
-# Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
-
-ZSH_THEME="agnoster"
-PURE_NODE_ENABLED=0
-plugins=(git docker docker-compose zsh-interactive-cd)
-
-source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
   . /usr/local/etc/profile.d/z.sh

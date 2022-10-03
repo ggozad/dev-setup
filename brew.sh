@@ -42,45 +42,33 @@ brew install fzf && /usr/local/opt/fzf/install
 brew install broot
 
 # Install other useful binaries.
-brew install ack
 brew install dark-mode
 brew install git
 brew install git-flow
 brew install git-extras
 brew install diff-so-fancy
 brew install hub
-brew install pkg-config libffi
 brew install htop
 brew install mkcert && mkcert -install
-brew install nss
 brew install less
-
-# Lxml and Libxslt
-brew install libxml2
-brew install libxslt
-brew install libyaml
-
-# Web stuff
-brew install chromedriver
-brew install geckodriver
-brew install fontconfig freetype
-brew install openssl
-brew install pcre
-brew install readline
-brew install imagemagick
 
 # js
 brew install node
-brew install watchman
 brew install yarn
 
 # docker
 # Install docker from installer
-brew install docker-completion docker-compose-completion
+brew install docker-completion
+
+# z-sh
+brew install zsh
+brew install zsh-syntax-highlighting
+brew install zsh-autosuggestions
+brew install z
+
 
 # Misc casks
 brew install visual-studio-code
-brew install iterm2
 brew install google-chrome
 brew install firefox
 brew install dropbox
