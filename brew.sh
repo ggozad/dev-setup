@@ -75,6 +75,6 @@ brew install dropbox
 brew install rectangle
 brew install stats
 brew install tailscale 
-
+brew install warp
 # Remove outdated versions from the cellar.
 brew cleanup
