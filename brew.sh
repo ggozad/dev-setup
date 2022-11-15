@@ -34,6 +34,9 @@ brew install wget
 # Install Python
 brew install python3
 
+# Install pre-commit
+brew install pre-commit
+
 # Rust
 brew install rust
 
@@ -66,6 +69,10 @@ brew install zsh-syntax-highlighting
 brew install zsh-autosuggestions
 brew install z
 
+# ml
+brew install hdf5
+brew install protobuf
+
 
 # Misc casks
 brew install visual-studio-code
@@ -76,5 +83,4 @@ brew install rectangle
 brew install stats
 brew install tailscale 
 brew install warp
-# Remove outdated versions from the cellar.
-brew cleanup
+
