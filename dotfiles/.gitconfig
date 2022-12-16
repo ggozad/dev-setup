@@ -8,7 +8,6 @@
         br = branch
         branch-name = rev-parse --abbrev-ref HEAD
         branch-diff = diff master...HEAD
-        branch-files = "!git diff master...HEAD --name-status | sed '/^D/d ; s/^.\\s\\+//'"
 
         # Commit
         c = commit
@@ -34,21 +33,18 @@
         # Diff
         d = diff --color-words
         dc = diff --cached
-        df = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
 
         # Merge
         m = merge
 
         # Pull
         up = pull
-        plom = pull origin master
-        plum = pull upstream master
-        preb = !git fetch upstream && git rebase upstream/master
+        plom = pull origin main
+        plum = pull upstream main
+        preb = !git fetch upstream && git rebase upstream/main
 
         # Push
         p = push
-        pom = push origin master
-        poh = push origin head
 
         # Stash
         st = stash
@@ -73,15 +69,6 @@
         # Submodules
         subpl = submodule update --init --recursive
 
-        # Git flow
-        new = !git pull origin develop && git flow feature start
-        done = !git pull origin develop && git flow feature finish "$(git symbolic-ref --short HEAD | sed -n 's/^feature\\///p')"
-        go = !git checkout $1 && pull
-        master = !git checkout master && pull
-        develop = !git checkout develop && pull
-        mmm = !git fetch origin master && git rebase origin/master
-        ddd = !git fetch origin develop && git rebase origin/develop
-
         # Misc
         publish = "!git push --set-upstream origin $(git branch-name)"
 
@@ -99,16 +86,6 @@
 
   cm = "!f() { \
       git log --pretty=custom --decorate --date=short --grep=\"$1\"; \
-  }; f"
-
-  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-  # Credit an author on the latest commit
-
-  credit = "!f() { \
-      if [ -n \"$1\" ] && [ -n \"$2\" ]; then \
-          git commit --amend --author \"$1 <$2>\" -C HEAD; \
-      fi \
   }; f"
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -260,3 +237,8 @@
         ff = only
 [init]
 	defaultBranch = main
+[user]
+	name = Yiorgis Gozadinos
+	email = ggozadinos@gmail.com
+[diff]
+	external = difft
