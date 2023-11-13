@@ -79,9 +79,7 @@ brew install protobuf
 brew install visual-studio-code
 brew install google-chrome
 brew install firefox
-brew install dropbox
 brew install rectangle
 brew install stats
-brew install tailscale 
 brew install warp
 
