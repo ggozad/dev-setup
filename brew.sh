@@ -49,8 +49,7 @@ brew install dark-mode
 brew install git
 brew install git-flow
 brew install git-extras
-brew install diff-so-fancy
-brew install difftastic
+brew install delta
 brew install hub
 brew install htop
 brew install mkcert && mkcert -install

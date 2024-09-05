@@ -137,18 +137,6 @@
         local = green
         remote = yellow
 
-[color "diff"]
-        frag = magenta
-        meta = yellow
-        new = green
-        old = red
-
-[color "diff-highlight"]
-        oldNormal = red bold
-        oldHighlight = "red bold 52"
-        newNormal = "green bold"
-        newHighlight = "green bold 22"
-
 [color "status"]
         added = green reverse
         changed = yellow reverse
@@ -166,11 +154,7 @@
         autocrlf = input
         mergeoptions = --no-edit
         ignorecase = false
-
-[pager]
-        # Insanely beautiful diffs ==> npm install -g diff-so-fancy
-        diff = diff-so-fancy | less --tabs=4 -RFX
-        show = diff-so-fancy | less --tabs=4 -RFX
+        pager = delta
 
 [diff "bin"]
         # Use `hexdump` to diff binary files
@@ -229,6 +213,7 @@
         clean = git lfs clean %f
         smudge = git lfs smudge %f
         required = true
+	process = git-lfs filter-process
 
 [fetch]
         prune = true
@@ -240,5 +225,5 @@
 [user]
 	name = Yiorgis Gozadinos
 	email = ggozadinos@gmail.com
-[diff]
-	external = difft
+# [diff]
+# 	external = difft
