@@ -68,6 +68,7 @@ brew install zsh
 brew install zsh-syntax-highlighting
 brew install zsh-autosuggestions
 brew install z
+brew install oh-my-posh
 
 # ml
 brew install hdf5
@@ -80,5 +81,4 @@ brew install google-chrome
 brew install firefox
 brew install rectangle
 brew install stats
-brew install warp
 
