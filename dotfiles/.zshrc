@@ -21,17 +21,10 @@ source <(kubectl completion zsh)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# z
-  . /opt/homebrew/etc/profile.d/z.sh
-
 # ngrok
 if command -v ngrok &>/dev/null; then
   eval "$(ngrok completion)"
 fi
-
-# terraform autocomplete
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /opt/homebrew/bin/terraform terraform
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
@@ -45,3 +38,6 @@ export PATH="$PATH:/Users/ggozad/.local/bin"
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
   eval "$(oh-my-posh init zsh --config ~/.oh-my-posh.json)"
 fi
+
+# forgit
+[ -f $HOMEBREW_PREFIX/share/forgit/forgit.plugin.zsh ] && source $HOMEBREW_PREFIX/share/forgit/forgit.plugin.zsh

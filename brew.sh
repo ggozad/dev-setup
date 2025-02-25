@@ -43,6 +43,7 @@ brew install rust
 # Install cli utils
 brew install fzf && /usr/local/opt/fzf/install
 brew install broot
+brew install forgit
 
 # Install other useful binaries.
 brew install dark-mode
@@ -57,7 +58,6 @@ brew install less
 
 # js
 brew install node
-brew install yarn
 
 # docker
 # Install docker from installer
@@ -67,7 +67,6 @@ brew install docker-completion
 brew install zsh
 brew install zsh-syntax-highlighting
 brew install zsh-autosuggestions
-brew install z
 brew install oh-my-posh
 
 # ml
