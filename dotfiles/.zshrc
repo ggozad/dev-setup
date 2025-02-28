@@ -21,6 +21,9 @@ source <(kubectl completion zsh)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# zoxide
+eval "$(zoxide init zsh)"
+
 # ngrok
 if command -v ngrok &>/dev/null; then
   eval "$(ngrok completion)"

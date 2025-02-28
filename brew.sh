@@ -42,6 +42,7 @@ brew install rust
 
 # Install cli utils
 brew install fzf && /usr/local/opt/fzf/install
+brew install zoxide
 brew install broot
 brew install forgit
 
