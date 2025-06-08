@@ -89,13 +89,13 @@
 
 # Git mergetool
 [merge]
-        tool = difft
+        tool = kitty
 
 [core]
         editor = code --wait
         abbrev = 12
         attributesfile = ~/.gitattributes
-        excludesfile = ~/.gitignore
+	excludesFile = ~/.gitignore
         autocrlf = input
         mergeoptions = --no-edit
         ignorecase = false
@@ -144,5 +144,20 @@
 [user]
 	name = Yiorgis Gozadinos
 	email = ggozadinos@gmail.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAIb7t6wveNgNCD44/Azknx0JO5a2MWWnpsYjANc7p1M
 [diff]
-	external = difft
+    tool = kitty
+    guitool = kitty.gui
+[difftool]
+    prompt = false
+    trustExitCode = true
+[difftool "kitty"]
+    cmd = kitten diff $LOCAL $REMOTE
+[difftool "kitty.gui"]
+    cmd = kitten diff $LOCAL $REMOTE
+[commit]
+	gpgsign = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign

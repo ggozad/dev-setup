@@ -44,7 +44,7 @@
           "properties": {
             "style": "folder"
           },
-          "template": " \uea83 {{ path .Path .Location }} ",
+          "template": " {{ path .Path .Location }} ",
           "foreground": "p:white",
           "powerline_symbol": "\ue0b0",
           "background": "p:orange",
